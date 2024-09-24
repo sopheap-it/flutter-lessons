@@ -28,10 +28,10 @@ class HomePage extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 ctx,
-                MaterialPageRoute(builder: (context) => const SecondScreen()),
+                MaterialPageRoute(builder: (context) => const DetailPage()),
               );
             },
-            child: const Text('Go to Second Screen'),
+            child: const Text('Go to Detail Page'),
           ),
         ),
       ),
@@ -39,13 +39,13 @@ class HomePage extends StatelessWidget {
   }
 }
 
-class SecondScreen extends StatelessWidget {
-  const SecondScreen({super.key});
+class DetailPage extends StatelessWidget {
+  const DetailPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Second Screen')),
+      appBar: AppBar(title: const Text('Detail Page')),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
